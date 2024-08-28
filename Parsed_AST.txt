@@ -1,0 +1,48 @@
+{
+       "Program": [
+        {
+          "Statement": "IfStatement",
+          "Condition":             {
+              "Statement": "BinaryExpr",
+              "BinaryOperator": "<",
+              "Left":                 {
+                  "Statement": "Identifier",
+                  "Symbol": "a"
+                },
+              "Right":                 {
+                  "Statement": "Identifier",
+                  "Symbol": "b"
+                }
+            },
+          "IfBody": [
+            {
+              "Statement": "VarDeclaration",
+              "Constant": false,
+              "Identifier": "a",
+              "Value":                 {
+                  "Statement": "NumericLiteral",
+                  "Value": 2
+                }
+            },
+            {
+              "Statement": "VarDeclaration",
+              "Constant": false,
+              "Identifier": "b",
+              "Value":                 {
+                  "Statement": "NumericLiteral",
+                  "Value": 3
+                }
+            },
+            {
+              "Statement": "ReturnStatement",
+              "ReturnValue":                 {
+                  "Statement": "Identifier",
+                  "Symbol": "True"
+                }
+            }
+          ],
+          "ElseBody": [
+          ]
+        }
+      ]
+}
